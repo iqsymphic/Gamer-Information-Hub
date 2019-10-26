@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="ff14-bg">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Capstone Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+  
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="../index.html">Home</a>
+      <a href="../games.html">Games</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </div>
+    <main role="main" class="container">
+      <section class="app-container">
+        <form id="search-form">
+          <h1>Character Search</h1>
+          <p>Enter the name of the character</p>
+          <input
+            type="text"
+            id="name-input"
+            class="form-control"
+            placeholder="Enter a name">
+          <br>
+          <p>Enter the character's server</p>
+          <input
+            type="text"
+            id="server-input"
+            class="form-control"
+            placeholder="Warning: If empty, then all search results will be shown!">
+          <br>
+          <input
+            id="submit-button"
+            class="btn btn-primary"
+            type="submit"
+            value="Submit">
+        </form>
+      </section>
+      <section id="results-list" class="container hidden">
+        <p>Here are your search results</p>
+      </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
